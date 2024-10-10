@@ -42,9 +42,7 @@ const DishItem = ({
 
   return (
     <li className="dish-item-container">
-      <div
-        className={`veg-border ${dishType === 1 ? 'non-veg-border' : ''} `}
-      >
+      <div className={`veg-border ${dishType === 1 ? 'non-veg-border' : ''} `}>
         <div className={`veg-round ${dishType === 1 ? 'non-veg-round' : ''}`} />
       </div>
       <div className="dish-details-container">

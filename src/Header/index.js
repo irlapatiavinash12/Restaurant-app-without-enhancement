@@ -8,17 +8,15 @@ const Header = ({cartItems}) => {
   const renderCartIcon = () => (
     <div className="cart-icon-container">
       <IoCartOutline className="cart-sizing" />
-      <p className="m-0 cart-count">{getCartItemsCount()}</p>
+      <p className="cart-count">{getCartItemsCount()}</p>
     </div>
   )
 
   return (
-    <header className="p-4 d-flex flex-row align-items-center nav-header">
-      <h1 className="m-0 logo-heading">UNI Resto Cafe</h1>
+    <header className="nav-header">
+      <h1 className="logo-heading">UNI Resto Cafe</h1>
       <div className="cart-compartment">
-        <p className="mt-0 mb-0 me-2 d-none d-sm-block my-orders-text">
-          My Orders
-        </p>
+        <p className="my-orders-text">My Orders</p>
         {renderCartIcon()}
       </div>
     </header>
